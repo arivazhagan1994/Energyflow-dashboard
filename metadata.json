@@ -1,0 +1,5 @@
+{
+  "name": "EnergyFlow Dashboard",
+  "description": "A comprehensive data visualization dashboard for analyzing energy flows using Sankey diagrams. Supports CSV and Excel upload, interactive charts, and data preview.",
+  "requestFramePermissions": []
+}

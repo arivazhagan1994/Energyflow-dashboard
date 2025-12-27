@@ -1,0 +1,73 @@
+
+/* High-End Visualization Theme */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #f8fafc;
+  font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Premium Scrollbars */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #e2e8f0;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #cbd5e1;
+}
+
+/* Label Contrast Engine */
+text {
+  user-select: none;
+  pointer-events: none;
+  shape-rendering: geometricPrecision;
+}
+
+.node-label-bg {
+  stroke: #ffffff;
+  stroke-width: 3.5px;
+  stroke-linejoin: round;
+  paint-order: stroke;
+  opacity: 1;
+}
+
+/* Node Aesthetics */
+.node-rect {
+  shape-rendering: crispEdges;
+  cursor: pointer;
+  stroke-width: 1px;
+}
+
+/* Flow Dynamics */
+.flow-path {
+  fill: none;
+  transition: stroke-opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.flow-path:hover {
+  stroke-opacity: 0.9 !important;
+}
+
+/* Layout Elements */
+.chart-card {
+  border-radius: 16px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.chart-card:hover {
+  box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);
+}
+
+/* UI Transitions */
+.animate-in {
+  animation-fill-mode: forwards;
+}
